@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 *.sqlite
+!kozijnen_data.sqlite
 *.sqlite-journal
 .venv/
 venv/
