@@ -1,0 +1,18 @@
+---
+description: Verplicht Kozijnen calculator herstarten na relevante codewijzigingen
+globs: "**/*"
+alwaysApply: true
+---
+
+# Kozijnen calculator — herstart na updates (verplicht)
+
+Na **elke sessie waarin je code in deze map aanpast** die de draaiende app kan beïnvloeden — met name `gui.py`, `main.py`, `db.py`, `pricing.py`, `export_quote.py` — **moet** je vóór het afronden van je antwoord het herstartscript uitvoeren, zodat de gebruiker meteen de nieuwe versie ziet:
+
+```text
+powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\Timo\kozijnen-calculator\restart.ps1"
+```
+
+(Of vanuit `kozijnen-calculator`: `.\restart.ps1` in PowerShell.)
+
+- Gebruik **geen** brede `taskkill` op alle `python.exe`; alleen dit script.
+- Sla de herstart **alleen** over als de gebruiker expliciet vraagt om geen restart, of als je **alleen** documentatie / comments zonder runtime-effect wijzigt (en zelfs dan mag je kort melden dat een restart niet nodig is).
